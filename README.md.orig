@@ -1,13 +1,16 @@
-# Melanoma Image Classification (Benign vs Malignant)
+# Melanoma Classification: Benign vs Malignant
 
-This project uses Convolutional Neural Networks (CNNs) built with TensorFlow and Keras to classify skin lesion images into **Benign** or **Malignant** categories.
+This project is a deep learning-based image classification system to distinguish between benign and malignant melanoma using Convolutional Neural Networks (CNNs). It leverages TensorFlow and Keras for building and training models, and Scikit-learn for evaluation.
 
-🧠 Model Overview
+## 🧠 Model Architecture
 
-•	Uses Conv2D layers with BatchNorm, LeakyReLU, MaxPooling, and Dropout.
-•	Binary classification (Benign = 0, Malignant = 1)
-•	Optimizers used: Adam, SGD, Nadam
-•	Evaluated using confusion matrix, accuracy, and classification report
+- Input Layer
+- Convolutional Layers with LeakyReLU activation
+- Batch Normalization
+- MaxPooling
+- Dropout Regularization
+- Fully Connected Dense Layers
+- Output Layer (Softmax or Sigmoid based on setup)
 
 ## 🧪 Features
 
@@ -18,6 +21,9 @@ This project uses Convolutional Neural Networks (CNNs) built with TensorFlow and
 - Evaluation: Confusion matrix, classification report
 - Visualization with matplotlib and seaborn
 
+<<<<<<< Updated upstream
+## 📂 Project Structure
+=======
 ## 📊 Dataset
 •	The dataset is split into train/, validation/, and test/ directories
 •	Each contains subfolders Benign/ and Malignant/
@@ -59,3 +65,4 @@ uv pip install -r requirements.txt
 📄 License
 
 This project is open-source and available under the MIT License.
+>>>>>>> Stashed changes
