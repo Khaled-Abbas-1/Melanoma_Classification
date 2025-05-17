@@ -1,16 +1,13 @@
-# Melanoma Classification: Benign vs Malignant
+# Melanoma Image Classification (Benign vs Malignant)
 
-This project is a deep learning-based image classification system to distinguish between benign and malignant melanoma using Convolutional Neural Networks (CNNs). It leverages TensorFlow and Keras for building and training models, and Scikit-learn for evaluation.
+This project uses Convolutional Neural Networks (CNNs) built with TensorFlow and Keras to classify skin lesion images into **Benign** or **Malignant** categories.
 
-## 🧠 Model Architecture
+🧠 Model Overview
 
-- Input Layer
-- Convolutional Layers with LeakyReLU activation
-- Batch Normalization
-- MaxPooling
-- Dropout Regularization
-- Fully Connected Dense Layers
-- Output Layer (Softmax or Sigmoid based on setup)
+•	Uses Conv2D layers with BatchNorm, LeakyReLU, MaxPooling, and Dropout.
+•	Binary classification (Benign = 0, Malignant = 1)
+•	Optimizers used: Adam, SGD, Nadam
+•	Evaluated using confusion matrix, accuracy, and classification report
 
 ## 🧪 Features
 
@@ -21,4 +18,62 @@ This project is a deep learning-based image classification system to distinguish
 - Evaluation: Confusion matrix, classification report
 - Visualization with matplotlib and seaborn
 
+## 📊 Dataset
+	•	The dataset is split into train/, validation/, and test/ directories
+	•	Each contains subfolders Benign/ and Malignant/
+
+## 🚀 Running the Model
+
+Use the notebook Model_1_2_3.ipynb to train and evaluate different models and optimizers.
+
+## 📈 Evaluation
+	•	Training/Validation accuracy and loss plots
+	•	Confusion matrix and classification report
+	•	Can integrate with callbacks like EarlyStopping, ModelCheckpoint, and LearningRateScheduler
+
+
 ## 📂 Project Structure
+
+├── train/
+│   ├── Benign/
+│   └── Malignant/
+├── validation/
+│   ├── Benign/
+│   └── Malignant/
+├── test/
+│   ├── Benign/
+│   └── Malignant/
+├── Model_1_2_3.ipynb         # Jupyter Notebook with model experiments
+├── pyproject.toml            # Project metadata and dependencies (for uv)
+├── requirements.txt          # Optional: explicit pip installable packages
+├── README.md
+└── .gitignore
+
+## 🛠️ Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/melanoma-classification.git
+   cd melanoma-classification
+   ```
+
+2. Ensure you have [uv](https://github.com/astral-sh/uv) installed.
+
+3. Install dependencies after you make the environment:
+
+```bash
+uv venv
+uv pip install -e .
+```
+
+Or using requirements.txt:
+
+```bash
+uv pip install -r requirements.txt
+```
+
+---
+
+📄 License
+
+This project is open-source and available under the MIT License.
