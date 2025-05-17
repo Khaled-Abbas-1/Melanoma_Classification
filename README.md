@@ -19,35 +19,17 @@ This project uses Convolutional Neural Networks (CNNs) built with TensorFlow and
 - Visualization with matplotlib and seaborn
 
 ## 📊 Dataset
-	•	The dataset is split into train/, validation/, and test/ directories
-	•	Each contains subfolders Benign/ and Malignant/
+•	The dataset is split into train/, validation/, and test/ directories
+•	Each contains subfolders Benign/ and Malignant/
 
 ## 🚀 Running the Model
 
 Use the notebook Model_1_2_3.ipynb to train and evaluate different models and optimizers.
 
 ## 📈 Evaluation
-	•	Training/Validation accuracy and loss plots
-	•	Confusion matrix and classification report
-	•	Can integrate with callbacks like EarlyStopping, ModelCheckpoint, and LearningRateScheduler
-
-
-## 📂 Project Structure
-
-├── train/
-│   ├── Benign/
-│   └── Malignant/
-├── validation/
-│   ├── Benign/
-│   └── Malignant/
-├── test/
-│   ├── Benign/
-│   └── Malignant/
-├── Model_1_2_3.ipynb         # Jupyter Notebook with model experiments
-├── pyproject.toml            # Project metadata and dependencies (for uv)
-├── requirements.txt          # Optional: explicit pip installable packages
-├── README.md
-└── .gitignore
+•	Training/Validation accuracy and loss plots
+•	Confusion matrix and classification report
+•	Can integrate with callbacks like EarlyStopping, ModelCheckpoint, and LearningRateScheduler
 
 ## 🛠️ Installation
 
